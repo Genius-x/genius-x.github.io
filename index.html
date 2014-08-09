@@ -1,5 +1,11 @@
 ---
+<<<<<<< HEAD
 layout: base
+=======
+layout: default
+title: Genius-x
+overview: true
+>>>>>>> FETCH_HEAD
 ---
 <div class="blog-cover" style="background-image:url(/images/{{ site.inc.cover_image }});">
     
@@ -22,6 +28,7 @@ layout: base
 </div>
 
 
+<<<<<<< HEAD
 <article class="container">
 {% for post in paginator.posts %}
   {% unless post.draft %}
@@ -34,6 +41,78 @@ layout: base
                 Written By <address>{{ post.author.name }}</address> &mdash;
                 <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
             </div>
+=======
+<section class="intro">
+  <div class="grid">
+    <div class="unit whole center-on-mobiles">
+      <p class="first">An Entity Component System framework based on Cocos2d-x</p>
+    </div>
+  </div>
+</section>
+<section class="features">
+  <div class="grid">
+    <div class="unit one-third">
+      <h2>数据驱动</h2>
+      <p>
+        我们认为程序员只应该思考算法，图像，逻辑，其它的交给设计师去做吧.
+      </p>
+      <a href="/docs/usage/">How Jekyll works &rarr;</a>
+    </div>
+    <div class="unit one-third">
+      <h2>组件化</h2>
+      <p>组合优于继承，每个游戏对象的行为通过不同的行为组合而成，去除了臃肿的树形结构，保持程序更易理解和维护.</p>
+      <a href="/docs/templates/">Jekyll template guide &rarr;</a>
+    </div>
+    <div class="unit one-third">
+      <h2>脚本模型</h2>
+      <p>
+        我们认为脚本最大的作用是让设计师对游戏进行定制，它不是用来实现整个游戏，Genius-x拥有更优秀的脚本模型。
+      </p>
+      <a href="/docs/migrations/">Migrate your blog &rarr;</a>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+<section class="quickstart">
+  <div class="grid">
+    <div class="unit golden-small center-on-mobiles">
+      <h4>开始使用Genius-x</h4>
+    </div>
+    <div class="unit golden-large code">
+      <p class="title">Quick-start Instructions</p>
+      <div class="shell">
+        <p class="line">
+          <span class="command">1.将genius-x目录拷贝至与cocos2d同级的目录</span>
+        </p>
+        <p class="line">
+          <span class="command">2.将build目录下的工程文件添加引用至你的项目中</span>
+        </p>
+        <p class="line">
+          <span class="command">3.添加搜索路径</span>
+        </p>
+        <p class="line">
+          <span class="command">4.添加静态库链接</span>
+        </p>
+        <p class="line">
+          <span class="command">5.现在，你可以开始使用Genius-x</span>
+        </p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+<section class="free-hosting">
+  <div class="grid">
+    <div class="unit whole">
+      <div class="grid pane">
+        <div class="unit whole center-on-mobiles">
+          <img src="img/octojekyll.png" width="300" height="251" alt="Free Jekyll hosting on GitHub Pages">
+          <div class="pane-content">
+            <h2 class="center-on-mobiles"><strong>Free hosting</strong> with GitHub Pages</h2>
+            <p>Sick of dealing with hosting companies? <a href="http://pages.github.com/">GitHub Pages</a> are <em>powered by Jekyll</em>, so you can easily deploy your site using GitHub for free&mdash;<a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">custom domain name</a> and&nbsp;all.</p>
+            <a href="http://pages.github.com/">Learn more about GitHub Pages &rarr;</a>
+          </div>
+>>>>>>> FETCH_HEAD
         </div>
         <hr>
     </section>
